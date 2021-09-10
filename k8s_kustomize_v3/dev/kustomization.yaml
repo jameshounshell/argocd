@@ -4,7 +4,7 @@ resources:
 generators:
  - chart.yaml
 
-namespace: demo
+namespace: default
 namePrefix: james-
 commonLabels:
   missionlane.com/owner: snuggie12
