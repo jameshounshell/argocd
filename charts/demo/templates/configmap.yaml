@@ -1,0 +1,14 @@
+{{- $env := .Values.env }}
+{{- $image := .Values.image }}
+{{- range $name, $value := .Values.apps }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ $name }}
+  namespace: default
+data: 
+  url: {{ $value.url }}
+  image: {{ $image }}
+  env: {{ $env }}
+{{- end }}

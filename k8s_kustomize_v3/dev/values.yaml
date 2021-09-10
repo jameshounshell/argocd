@@ -1,0 +1,6 @@
+env: "infra-dev"
+apps:
+  matt: 
+    url: https://github.com/snuggie12/foo
+  james:
+    url: https://github.com/jameshounshell/foo

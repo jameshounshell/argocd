@@ -1,0 +1,10 @@
+resources:
+  - configmap.yaml
+
+ generators:
+   - chart.yaml
+
+namespace: demo
+namePrefix: james-
+commonLabels:
+  missionlane.com/owner: snuggie12
