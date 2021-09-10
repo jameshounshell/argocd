@@ -8,3 +8,5 @@ namespace: demo
 namePrefix: james-
 commonLabels:
   missionlane.com/owner: snuggie12
+
+Unable to save changes: application spec is invalid: InvalidSpecError: Unable to get app details: rpc error: code = Unknown desc = `kustomize build /tmp/https:__github.com_jameshounshell_argocd/k8s_kustomize_v3/dev` failed exit status 1: Error: loading generator plugins: plugin ~G_builtin_HelmChartInflationGenerator|~X|demo fails configuration: chartName cannot be empty

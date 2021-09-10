@@ -3,7 +3,7 @@ apiVersion: builtin
 kind: HelmChartInflationGenerator
 metadata:
   name: demo
-name: demo
+chartName: demo
 chartVersion: "1.0"
 #chartHome: ../charts
 chartHome: /tmp/https:__github.com_jameshounshell_argocd/k8s/charts  # to work with argocd, this must be the full path to the working directory on the argocd-repo-server.
