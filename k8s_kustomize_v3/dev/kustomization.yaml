@@ -1,8 +1,8 @@
 resources:
   - configmap.yaml
 
- generators:
-   - chart.yaml
+generators:
+ - chart.yaml
 
 namespace: demo
 namePrefix: james-
