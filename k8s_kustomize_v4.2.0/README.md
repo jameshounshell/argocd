@@ -22,3 +22,23 @@ data:
   kustomize.version.v4.2.0: /custom-tools/kustomize-v4.2.0/kustomize
 ### more below
 ```
+
+argocd application
+```
+project: infra
+source:
+  repoURL: 'ssh://git@github.com/jameshounshell/argocd.git'
+  path: k8s_kustomize_v4.2.0/dev
+  targetRevision: main
+  kustomize:
+    version: v4.2.0
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: default
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
+  retry:
+    limit: 2
+```
