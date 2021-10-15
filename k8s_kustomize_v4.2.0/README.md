@@ -23,7 +23,7 @@ data:
 ### more below
 ```
 
-argocd application
+argocd application (full spec: https://github.com/argoproj/argo-cd/blob/master/docs/operator-manual/application.yaml)
 ```
 project: infra
 source:
